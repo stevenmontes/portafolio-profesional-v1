@@ -33,7 +33,79 @@
 
             <section id="blog">
                 <header>
-                    <h2>Lo que todo el mundo debería de saber sobre las metodologías agiles.</h2>
+                    <h2>Tipos de patrones creacionales</h2>
+                    <p>
+                        Estos patrones te facilitan la tarea de creación de nuevos objetos, de una forma
+                        que el proceso pueda ser desacoplado del resto del sistema.
+                    </p>
+                    <h3>Los patrones creacionales están basados en dos conceptos:</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Encapsular el conocimiento acerca de los tipos concretos que nuestro sistema utiliza. 
+                                Estos patrones normalmente trabajarán con interfaces, por lo que la implementación 
+                                concreta que utilicemos queda aislada.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ocultar cómo estas implementaciones concretas necesitan ser creadas y cómo se combinan entre sí.
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Objetivos principales de los patrones creacionales: </h3>
+                    <ul>
+                        <li>
+                            <p>Abstraer el proceso de instanciación.</p>
+                        </li>
+                        <li>
+                            <p>Aumentan la flexibilidad del sistema</p>
+                        </li>
+                        <li>
+                            <p>
+                                Están diseñados para romper aplicaciones con herencia.
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Los patrones creacionales más conocidos son:</h3>
+                    <ul>
+                        <li>
+                            <p><b style="font-weight: bold;">Abstract Factory: </b>
+                                Nos provee una interfaz que delega la creación de un conjunto de objetos 
+                                relacionados sin necesidad de especificar en ningún momento cuáles son las 
+                                implementaciones concretas.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p><b style="font-weight: bold;">Factory Method: </b>
+                                expone un método de creación, delegando en las subclases la implementación de este método.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p><b style="font-weight: bold;">Builder: </b>
+                                Separa la creación de un objeto complejo de su estructura, de tal forma que el 
+                                mismo proceso de construcción nos puede servir para crear representaciones 
+                                diferentes.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p><b style="font-weight: bold;">Singleton: </b>
+                                limita a uno el número de instancias posibles de una clase en nuestro programa, 
+                                y proporciona un acceso global al mismo.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p><b style="font-weight: bold;">Prototype: </b>
+                                Permite la creación de objetos basados en «plantillas». 
+                                Un nuevo objeto se crea a partir de la clonación de otro objeto.
+                            </p>
+                        </li>
+                    </ul>
+                    
                 </header>
             </section>
 
