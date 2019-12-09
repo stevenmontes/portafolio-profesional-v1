@@ -2,7 +2,7 @@
 
 <html lang="es">
     <head>
-        <title>Antipatrones, formas incorrectas de desarrollo de software</title>
+        <title>Antipatrones, formas incorrectas de desarrollar software</title>
         <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -13,7 +13,7 @@
                 <h2>Estás leyendo: </h2>
                 <article class="work-item">
                     <a href="antipatrones.html" class="image fit thumb"><img src="images/blog4/img1.jpg" alt="" /></a>
-                    <h3>Antipatrones, formas incorrectas de desarrollo de software</h3>
+                    <h3>Antipatrones, formas incorrectas de desarrollar software</h3>
                     <p>
                         Los antipatrones son ejemplos bien documentados de malas soluciones en el 
                         desarrollo de software. Aqui algunos anti patrones mencionadas, para evitarlos 
@@ -34,8 +34,153 @@
 
             <section id="blog">
                 <header>
-                    <h2>Antipatrones, formas incorrectas de desarrollo de software</h2>
+                    <h2>Antipatrones, formas incorrectas de desarrollar software</h2>
                 </header>
+                <p>
+                    Los antipatrones son ejemplos bien documentados de malas soluciones en el 
+                    desarrollo de software. Aqui algunos anti patrones mencionadas, para evitarlos 
+                    a toda costa.
+                </p>
+
+                <p>
+                    En la elaboración de un sistema, intervienen al menos, diversos actores: arquitectos de 
+                    software, administradores de proyecto y desarrolladores.
+                </p>
+                <p>
+                    Para cada uno de ellos, existen 
+                    anti-patrones que describen comportamientos y soluciones incorrectas.
+                </p>
+                <p>
+                    Los anti-patrones 
+                    (una vez conocidos) constituyen para cada uno de los actores involucrados, descripciones 
+                    de problemas recurrentes en la construcción de software, les proporcionan un vocabulario 
+                    común para identificar problemas y discutir posibles soluciones y les sugieren pasos para 
+                    la re-ingeniería, y re-organización estructural de un sistema.
+                </p>
+                <h3>Anti-patrones de Codificación: </h3>
+                <ul>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Lava Flow: </b>
+                            Es construir grandes cantidades de código de manera desordenada, 
+                            con poca documentación y poca claridad de su función en el sistema.
+                        </p>
+                        <p>
+                            Esto se hace patente cuando: 1. Se declaran variables no justificadas. 
+                            2. Se construyen clases o bloques de código muy grandes y complejas sin documentar,
+                            o que no se relacionan claramente con la arquitectura. 
+                            3. Usando un inconsistente y difuso estilo de evolución de una arquitectura. 
+                            4. Cuando en el sistema existen muchas áreas con código por terminar o reemplazar.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">The God</b>
+                            Un programa omnipresente y desconocido. 
+                            Aquel sistema donde una sola clase ó modulo hace todo. 
+                            Así que el programa es un solitario y único archivo de muchísimas líneas. 
+                            En consecuencia, tenemos un código desorganizado y fuertemente interdependendiente
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Golden Hammer</b>
+                            Es un vicio relacionado con aferrarse a un paradigma, para solucionar todos los 
+                            problemas que se nos presenten al desarrollar sistemas, como por ejemplo, 
+                            siempre querer usar el mismo lenguaje de programación para todos los desarrollos, 
+                            sea o no conveniente.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Spaghetti Code</b>
+                            Se dice de una pieza de código fuente no documentado, donde cualquier pequeño 
+                            movimiento convulsiona la estructura completa del sistema.
+                        </p>
+                        <p>
+                            La forma en que se escribe cada una de las líneas, desde la indentación 
+                            hasta el lenguaje o lenguajes utilizados y su interacción. 
+                            Ya en el contexto spaghetti, si mezclamos más de un lenguaje de programación en el 
+                            mismo archivo, se hace mucho más complicado.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Fantasmas</b>
+                            Demasiadas clases en un programa o tablas en una base de datos. Varias clases o 
+                            tablas con mínimas responsabilidades.
+                        </p>
+                        <p>
+                            Se colocan clases inútiles, que disfrazan el hecho que todo el sistema se encuentra 
+                            construido en uno, o unos cuantos archivos, módulos o clases
+                        </p>
+                        <p>
+                            Es imposible hacer extensiones al sistema, porque entre tanto "fantasma", encontrar 
+                            los elementos relevantes es imposible.
+                        </p>
+                    </li>
+                </ul>
+
+                <h3>Anti-patrones de Arquitectura</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Reinventar la rueda: </b>
+                            Se refiere a reimplementar componentes que se pueden conseguir prefabricados de 
+                            antemano, y hacer poco reuso en el código. En breves palabras: querer hacer todo 
+                            uno mismo.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Casarse con el diablo: </b>
+                            Crear una dependencia hacia un fabricante que nos provee de alguna solución. 
+                        </p>
+                        <p>
+                            Ejemplo: una empresa desarrolló casi por completo el sistema de administración 
+                            sobre PL/SQL en Oracle. Ellos necesitan seguir pagando las licencias de Oracle para 
+                            mantenerse operando.
+                        </p>
+                        <p>
+                            Aún cuando los nuevos desarrolladores los estén elaborando ya en 
+                            otras plataformas.
+                        </p>
+                    </li>
+                </ul>
+
+                <h3>Anti-patrones de Administración de Proyecto</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">The Mythical Month Man: </b>
+                            Consiste en la creencia de que asignar más personal a un proyecto, 
+                            acotará el tiempo de entrega. 
+                        </p>
+                        <p>
+                            Regularmente como una forma desesperada de intentar corregir retraso del proyecto.
+                            Llega un punto donde entre más personal se asigne, más se retrasa el proyecto.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Project Miss-management: </b>
+                            El jefe (a) que no saben coordinar. El proyecto se descuida y se monitorea 
+                            de manera inadecuada, se manifiesta con 
+                            retrasos en las fechas de entrega y/o áreas incompletas.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b style="font-weight: bold;">Corncob: </b>
+                            Los empleados se obstaculizan unos a otros. Personas conflictivas o difíciles de 
+                            tratar que forman parte del equipo de desarrollo, desvían u obstaculizan el 
+                            proceso de producción.
+                        </p>
+                    </li>
+                </ul>
             </section>
 
         </section>
